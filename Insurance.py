@@ -117,5 +117,5 @@ final_features = [np.array(int_features)]
 if st.button('Predict'):           # when the submit button is pressed
     prediction =  loaded_model.predict(final_features)
     st.balloons()
-    st.success(f'Your insurance charges would be: ${round(prediction[0],2)}')
+    st.success('Your insurance charges would be dollar:',round(prediction[0],2))
     
